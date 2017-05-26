@@ -10,7 +10,7 @@
 #import "YLPartModel.h"
 
 @interface YLCircleChart : UIView
-
+@property (nonatomic, assign) CGFloat percentage;
 
 - (instancetype) initWithFrame:(CGRect)frame startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle percentage:(CGFloat)percentage;
 

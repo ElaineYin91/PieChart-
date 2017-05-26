@@ -1,0 +1,16 @@
+//
+//  DrawRectTest-PrefixHeader.pch
+//  DrawRectTest
+//
+//  Created by yinlinlin on 2017/5/26.
+//  Copyright © 2017年 yinlinlin. All rights reserved.
+//
+
+#ifndef DrawRectTest_PrefixHeader_pch
+#define DrawRectTest_PrefixHeader_pch
+#import "public.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* DrawRectTest_PrefixHeader_pch */

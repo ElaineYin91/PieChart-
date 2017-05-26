@@ -13,9 +13,6 @@
     //圆环，单个百分比
     CGFloat _startAngle;
     CGFloat _endAngle;
-    CGFloat _percentage;
-    
-    
     
     CGFloat _radius;//半径
     CGPoint _centerPoint;//中心
@@ -25,6 +22,7 @@
     CGFloat _total;
     //记录路径，CGPathContainsPoint判断点击的扇形区域，处理点击事件
     NSMutableArray *_pathArr;
+    ChartType _chartType;
 }
 
 //基准圆环颜色
@@ -47,6 +45,7 @@
 //parts
 - (instancetype) initWithFrame:(CGRect)frame parts:(NSArray<YLPartModel *> *)parts total:(CGFloat)total {
     if (self = [super initWithFrame:frame]) {
+        _chartType = ChartType_Parts;
         _unfillColor = [UIColor lightGrayColor];
         _fillColor = [UIColor orangeColor];
         _radius = MIN(self.bounds.size.height/2, self.bounds.size.width/2) - 20;
@@ -62,6 +61,7 @@
 //startAngle:起点角度, endAngle:终点角度, percentage：百分比
 - (instancetype) initWithFrame:(CGRect)frame startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle percentage:(CGFloat)percentage {
     if (self = [super initWithFrame:frame]) {
+        _chartType = ChartType_Circle;
         _startAngle = startAngle;
         _endAngle = endAngle;
         _percentage = percentage;
@@ -76,9 +76,25 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    [self drawCircle2];
+    switch (_chartType) {
+        case ChartType_Circle:
+        {
+            [self drawCircle1];
+            
+        }
+            break;
+        case ChartType_Parts: {
+            [self drawCircle3];
+        }
+            break;
+        default:
+            break;
+    }
+    
+//    [self drawCircle2];
 //    [self drawCircle3];
 }
+
 
 
 #pragma mark - 圆环
@@ -102,7 +118,8 @@
     bPath.lineJoinStyle = kCGLineJoinRound;
     [_fillColor setStroke];
     [bPath stroke];
-
+    
+    
 }
 
 

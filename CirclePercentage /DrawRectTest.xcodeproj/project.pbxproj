@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD104BB31DF8F5930037CE02 /* YLPartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD104BB21DF8F5930037CE02 /* YLPartModel.m */; };
 		BD1052A21DF0244D00354460 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1052A11DF0244D00354460 /* DrawView.m */; };
+		BD15DA511ED7DA4700AD6003 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD15DA501ED7DA4700AD6003 /* ChartViewController.m */; };
 		BD1D35181DF7FD7000B62BC6 /* YLCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D35171DF7FD7000B62BC6 /* YLCircleChart.m */; };
 		BDED3EE51BEF0C6900C131DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED3EE41BEF0C6900C131DE /* main.m */; };
 		BDED3EE81BEF0C6900C131DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED3EE71BEF0C6900C131DE /* AppDelegate.m */; };
@@ -42,6 +43,10 @@
 		BD104BB21DF8F5930037CE02 /* YLPartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPartModel.m; sourceTree = "<group>"; };
 		BD1052A01DF0244D00354460 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
 		BD1052A11DF0244D00354460 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		BD15DA4F1ED7DA4700AD6003 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		BD15DA501ED7DA4700AD6003 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		BD15DA521ED7DC3500AD6003 /* public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
+		BD15DA531ED7DC9900AD6003 /* DrawRectTest-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawRectTest-PrefixHeader.pch"; sourceTree = "<group>"; };
 		BD1D35161DF7FD7000B62BC6 /* YLCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCircleChart.h; sourceTree = "<group>"; };
 		BD1D35171DF7FD7000B62BC6 /* YLCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCircleChart.m; sourceTree = "<group>"; };
 		BDED3EE01BEF0C6900C131DE /* DrawRectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawRectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,12 +119,15 @@
 				BDED3EE71BEF0C6900C131DE /* AppDelegate.m */,
 				BDED3EE91BEF0C6900C131DE /* ViewController.h */,
 				BDED3EEA1BEF0C6900C131DE /* ViewController.m */,
+				BD15DA4F1ED7DA4700AD6003 /* ChartViewController.h */,
+				BD15DA501ED7DA4700AD6003 /* ChartViewController.m */,
 				BD1052A01DF0244D00354460 /* DrawView.h */,
 				BD1052A11DF0244D00354460 /* DrawView.m */,
 				BD1D35161DF7FD7000B62BC6 /* YLCircleChart.h */,
 				BD1D35171DF7FD7000B62BC6 /* YLCircleChart.m */,
 				BD104BB11DF8F5930037CE02 /* YLPartModel.h */,
 				BD104BB21DF8F5930037CE02 /* YLPartModel.m */,
+				BD15DA521ED7DC3500AD6003 /* public.h */,
 				BDED3EEC1BEF0C6900C131DE /* Main.storyboard */,
 				BDED3EEF1BEF0C6900C131DE /* Assets.xcassets */,
 				BDED3EF11BEF0C6900C131DE /* LaunchScreen.storyboard */,
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BDED3EE41BEF0C6900C131DE /* main.m */,
+				BD15DA531ED7DC9900AD6003 /* DrawRectTest-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,7 +226,7 @@
 		BDED3ED81BEF0C6900C131DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = yinlinlin;
 				TargetAttributes = {
 					BDED3EDF1BEF0C6900C131DE = {
@@ -289,6 +298,7 @@
 				BDED3EEB1BEF0C6900C131DE /* ViewController.m in Sources */,
 				BDED3EE81BEF0C6900C131DE /* AppDelegate.m in Sources */,
 				BD1D35181DF7FD7000B62BC6 /* YLCircleChart.m in Sources */,
+				BD15DA511ED7DA4700AD6003 /* ChartViewController.m in Sources */,
 				BD1052A21DF0244D00354460 /* DrawView.m in Sources */,
 				BDED3EE51BEF0C6900C131DE /* main.m in Sources */,
 				BD104BB31DF8F5930037CE02 /* YLPartModel.m in Sources */,
@@ -359,8 +369,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,6 +384,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawRectTest/DrawRectTest-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -402,8 +416,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -413,6 +429,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawRectTest/DrawRectTest-PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
